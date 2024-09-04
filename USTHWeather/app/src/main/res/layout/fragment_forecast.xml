@@ -1,12 +1,356 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ForecastFragment">
+    android:orientation="vertical"
+    tools:context=".ForecastFragment"
+    android:background="#200000FF">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4169e1">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="3"
+            android:text="   USTH Weather"
+            android:textSize="50dp">
+        </TextView>
 
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/wt_4856659"
+            app:tint="@color/black">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/wt_15185">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Monday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_248320">
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Sunny\n 25-31C">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Tuesday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_5903939">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Partly Sunny\n 25-31C">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Wednesday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_7084486">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Sunny\n 25-31C">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Thursday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_4150897">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Rain\n 20 - 25C">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Friday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_6635551">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Sunny\n 25-31C">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Saturday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_2188025">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Sunny\n 25-31C">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_1212">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Sunny\n 25-31C">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Monday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_5903939">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Sunny\n 25-31C">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Tuesday"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wt_248320">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text=" Sunny\n 25-31C">
+
+        </TextView>
+
+    </LinearLayout>
 </LinearLayout>
