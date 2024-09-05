@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app.tint="http://schemas.android.com/apk/res-auto"
     android:id="@+id/frag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,40 +11,53 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#4169e1">
+        android:background="#3F51B5"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="3"
-            android:text="   USTH Weather"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
             android:gravity="center_vertical"
-            android:textSize="30dp">
+            android:text="USTH Weather"
+            android:textSize="30sp">
         </TextView>
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="70dp"
-            android:src="@drawable/wt_4856659"
-            app:tint="@color/black"></ImageView>
 
-        <ImageView
-            android:layout_width="40dp"
+        <ImageButton
+            android:layout_width="48dp"
             android:layout_height="70dp"
-            android:src="@drawable/wt_15185">
-        </ImageView>
+            android:background="#3F51B5"
+            android:src="@drawable/wt_213"
+            app.tint:tint="@color/white"
+            tools:ignore="ContentDescription"
+            android:contentDescription="Refresh">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="70dp"
+            android:src="@drawable/wt_212"
+            android:layout_marginEnd="5dp"
+            app.tint:tint="@color/white"
+            android:background="#3F51B5"
+            tools:ignore="ContentDescription"
+            android:contentDescription="Setting">
+        </ImageButton>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginTop="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -60,7 +73,8 @@
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_248320">
+            android:src="@drawable/wt_248320"
+            tools:ignore="ContentDescription">
         </ImageView>
 
         <TextView
@@ -68,19 +82,19 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Sunny\n 25-31C">
-
+            android:text="Sunny\n 25 – 31C">
         </TextView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -89,15 +103,14 @@
             android:gravity="center"
             android:text="Tuesday"
             android:textColor="@color/black">
-
         </TextView>
 
         <ImageView
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_5903939">
-
+            android:src="@drawable/wt_5903939"
+            tools:ignore="ContentDescription">
         </ImageView>
 
         <TextView
@@ -105,19 +118,19 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Partly Sunny\n 25-31C">
-
+            android:text="Partly Sunny\n 25 – 31C">
         </TextView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -133,7 +146,8 @@
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_7084486">
+            android:src="@drawable/wt_7084486"
+            tools:ignore="ContentDescription">
 
         </ImageView>
 
@@ -142,19 +156,20 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Sunny\n 25-31C">
+            android:text="Rain\n 20 – 25C">
 
         </TextView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -170,7 +185,8 @@
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_4150897">
+            android:src="@drawable/wt_4150897"
+            tools:ignore="ContentDescription">
 
         </ImageView>
 
@@ -179,19 +195,20 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Rain\n 20 - 25C">
+            android:text="Sunny\n 25 – 31C">
 
         </TextView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -207,7 +224,8 @@
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_6635551">
+            android:src="@drawable/wt_6635551"
+            tools:ignore="ContentDescription">
 
         </ImageView>
 
@@ -216,19 +234,19 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Sunny\n 25-31C">
-
+            android:text="Sunny\n 25 – 31C">
         </TextView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -237,15 +255,14 @@
             android:gravity="center"
             android:text="Saturday"
             android:textColor="@color/black">
-
         </TextView>
 
         <ImageView
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_2188025">
-
+            android:src="@drawable/wt_2188025"
+            tools:ignore="ContentDescription">
         </ImageView>
 
         <TextView
@@ -253,19 +270,20 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Sunny\n 25-31C">
+            android:text="Tornado \n 25 – 31C">
 
         </TextView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -281,8 +299,8 @@
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_1212">
-
+            android:src="@drawable/wt_1212"
+            tools:ignore="ContentDescription">
         </ImageView>
 
         <TextView
@@ -290,19 +308,20 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Sunny\n 25-31C">
+            android:text="Sunny\n 25 – 31C">
 
         </TextView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -318,8 +337,8 @@
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_5903939">
-
+            android:src="@drawable/wt_5903939"
+            tools:ignore="ContentDescription">
         </ImageView>
 
         <TextView
@@ -327,19 +346,20 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Sunny\n 25-31C">
+            android:text="Sunny\n 25 – 31C">
 
         </TextView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
-        android:layout_marginBottom="10px"
-        android:background="#200000FF">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#200000FF"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="50dp"
@@ -355,8 +375,8 @@
             android:layout_width="59dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/wt_248320">
-
+            android:src="@drawable/wt_248320"
+            tools:ignore="ContentDescription">
         </ImageView>
 
         <TextView
@@ -364,9 +384,8 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text=" Sunny\n 25-31C">
+            android:text="Sunny\n 25 – 31C">
 
         </TextView>
-
     </LinearLayout>
 </LinearLayout>
