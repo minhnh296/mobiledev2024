@@ -7,13 +7,16 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WeatherActivity extends AppCompatActivity {
-    public static final String TAG = "WeatherActivity";
+    public static final String TAG = "Weather Activity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hello_world);
+        setContentView(R.layout.activity_main);
         ForecastFragment firstFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.main, firstFragment).commit();
+
+        WeatherFragment secondFragment = new WeatherFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.main, secondFragment).commit();
     }
 
     @Override

@@ -1,19 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="#3F51B5"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="3"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:text="USTH Weather"
+            android:textSize="30sp">
+        </TextView>
+
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="70dp"
+            android:background="#3F51B5"
+            android:src="@drawable/wt_213"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription"
+            android:contentDescription="Refresh">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="70dp"
+            android:src="@drawable/wt_212"
+            android:layout_marginEnd="5dp"
+            android:background="#3F51B5"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription"
+            android:contentDescription="Setting">
+        </ImageButton>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/frag2"
+        android:name="vn.edu.usth.weatheractivity.WeatherFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/weatherfragment" />
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="vn.edu.usth.weatheractivity.ForecastFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_forecast" />
+</LinearLayout>
