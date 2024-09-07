@@ -48,15 +48,15 @@
         </ImageButton>
     </LinearLayout>
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/frag2"
         android:name="vn.edu.usth.weatheractivity.WeatherFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/weatherfragment" />
+        tools:layout="@layout/weatherfragment"/>
 
-    <fragment
-        android:id="@+id/frag"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frag_layout"
         android:name="vn.edu.usth.weatheractivity.ForecastFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
