@@ -13,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
+
 import vn.edu.usth.weatheractivity.haha.adapter;
 
 public class weather_activity extends AppCompatActivity {
@@ -27,6 +29,9 @@ public class weather_activity extends AppCompatActivity {
         PagerAdapter adapter = new adapter(getSupportFragmentManager());
         viewPager.setOffscreenPageLimit(3);
         viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
     @Override
