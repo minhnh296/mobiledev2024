@@ -4,60 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id="@+id/main">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#3F51B5"
-        android:orientation="horizontal">
-
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="56dp"
-            android:layout_weight="3"
-            android:layout_marginStart="15dp"
-            android:textColor="@color/white"
-            android:gravity="center_vertical"
-            android:text="USTH Weather"
-            android:textSize="30sp">
-        </TextView>
-
-
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="56dp"
-            android:background="#3F51B5"
-            android:src="@drawable/wt_213"
-            app:tint="@color/white"
-            tools:ignore="ContentDescription"
-            android:contentDescription="Refresh">
-        </ImageButton>
-
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="56dp"
-            android:src="@drawable/wt_212"
-            android:layout_marginEnd="5dp"
-            android:background="#3F51B5"
-            app:tint="@color/white"
-            tools:ignore="ContentDescription"
-            android:contentDescription="Setting">
-        </ImageButton>
-    </LinearLayout>
+        android:layout_height="match_parent"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/frag2"
-        android:name="vn.edu.usth.weatheractivity.WeatherFragment"
+        android:name="vn.edu.usth.weatheractivity.fragment_weather"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/weatherfragment"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/frag_layout"
-        android:name="vn.edu.usth.weatheractivity.ForecastFragment"
+        android:name="vn.edu.usth.weatheractivity.fragment_forecast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_forecast" />

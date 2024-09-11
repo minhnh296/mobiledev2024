@@ -8,7 +8,7 @@
         android:theme="@style/Theme.WeatherActivity">
 
         <activity
-            android:name=".WeatherActivity"
+            android:name=".weather_activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
