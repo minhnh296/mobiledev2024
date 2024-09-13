@@ -8,24 +8,24 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#90EE90"
+        android:background="@color/green"
         tools:ignore="MissingConstraints"
-        android:layout_marginRight="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="5dp">
+        android:layout_marginRight="@dimen/margin_vien2"
+        android:layout_marginLeft="@dimen/margin_vien2"
+        android:layout_marginTop="@dimen/margin_vien">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:text="12C\n Cloudy">
+            android:layout_marginStart="@dimen/margin_vien"
+            android:layout_marginTop="@dimen/margin_vien"
+            android:text="@string/may">
         </TextView>
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/paris_imag"
+            android:layout_height="@dimen/paris_imag"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:src="@drawable/wt_7084486">
@@ -35,10 +35,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginTop="@dimen/margin_vien"
+            android:layout_marginEnd="@dimen/margin_vien"
             android:gravity="right"
-            android:text="Paris">
+            android:text="@string/paris">
         </TextView>
     </RelativeLayout>
 </LinearLayout>

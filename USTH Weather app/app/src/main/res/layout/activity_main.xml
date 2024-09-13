@@ -15,20 +15,20 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="56dp"
+            android:layout_height="@dimen/width"
             android:layout_weight="3"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="@dimen/margin"
             android:textColor="@color/white"
             android:gravity="center_vertical"
-            android:text="USTH Weather"
+            android:text="@string/main_text"
             android:textSize="30sp">
         </TextView>
 
 
         <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="56dp"
-            android:background="#3F51B5"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/width"
+            android:background="@color/blue"
             android:src="@drawable/wt_213"
             app:tint="@color/white"
             tools:ignore="ContentDescription"
@@ -36,11 +36,11 @@
         </ImageButton>
 
         <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="56dp"
+            android:layout_width="@dimen/width"
+            android:layout_height="@dimen/width"
             android:src="@drawable/wt_212"
-            android:layout_marginEnd="5dp"
-            android:background="#3F51B5"
+            android:layout_marginEnd="@dimen/margin_vien"
+            android:background="@color/blue"
             app:tint="@color/white"
             tools:ignore="ContentDescription"
             android:contentDescription="Setting">

@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="width">50dp</dimen>
+    <dimen name="image_width">59dp</dimen>
+    <dimen name="text_width">100dp</dimen>
+    <dimen name="margin_vien">5dp</dimen>
+    <dimen name="margin_vien2">35dp</dimen>
+    <dimen name="paris_imag">200dp</dimen>
+
+
+
+
+</resources>

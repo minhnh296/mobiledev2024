@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GG</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mon">Thứ 2</string>
+    <string name="tue">Thứ 3</string>
+    <string name="wed">Thứ 4</string>
+    <string name="thur">Thứ 5</string>
+    <string name="fri">Thứ 6</string>
+    <string name="sat">Thứ 7</string>
+    <string name="sunday">Chủ nhật</string>
+    <string name="nangdep">Tương đối nắng\n 25 – 31C</string>
+    <string name="rainny">Mưa\n 20 – 25C</string>
+    <string name="sunny">Nắng\n 25 – 31C</string>
+    <string name="tornado">Lốc xoáy \n 25 – 31C</string>
+    <string name="may">12C\n Mây</string>
+    <string name="paris" translatable="false">Paris</string>
+    <string name="main_text" translatable="false">USTH Thời tiết</string>
+</resources>

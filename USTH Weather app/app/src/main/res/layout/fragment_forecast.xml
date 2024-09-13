@@ -10,26 +10,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="5dp"
-        android:background="#200000FF"
+        android:layout_height="@dimen/width"
+        android:layout_marginTop="@dimen/margin_vien"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin_vien"
+        android:background="@color/purple"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="@dimen/width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Monday"
+            android:text="@string/mon"
             android:textColor="@color/black">
 
         </TextView>
 
         <ImageView
-            android:layout_width="59dp"
+            android:layout_width="@dimen/image_width"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/wt_248320"
@@ -37,11 +37,11 @@
         </ImageView>
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Sunny\n 25 – 31C">
+            android:text="@string/sunny">
         </TextView>
 
     </LinearLayout>
@@ -52,20 +52,20 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="5dp"
-        android:background="#200000FF"
+        android:background="@color/purple"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="@dimen/width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Tuesday"
+            android:text="@string/tue"
             android:textColor="@color/black">
         </TextView>
 
         <ImageView
-            android:layout_width="59dp"
+            android:layout_width="@dimen/image_width"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/wt_5903939"
@@ -73,11 +73,11 @@
         </ImageView>
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Partly Sunny\n 25 – 31C">
+            android:text="@string/nangdep">
         </TextView>
 
     </LinearLayout>
@@ -88,21 +88,21 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="5dp"
-        android:background="#200000FF"
+        android:background="@color/purple"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="@dimen/width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Wednesday"
+            android:text="@string/wed"
             android:textColor="@color/black">
 
         </TextView>
 
         <ImageView
-            android:layout_width="59dp"
+            android:layout_width="@dimen/image_width"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/wt_7084486"
@@ -111,11 +111,11 @@
         </ImageView>
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Rain\n 20 – 25C">
+            android:text="@string/rainny">
 
         </TextView>
 
@@ -127,21 +127,21 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="5dp"
-        android:background="#200000FF"
+        android:background="@color/purple"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="@dimen/width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Thursday"
+            android:text="@string/thur"
             android:textColor="@color/black">
 
         </TextView>
 
         <ImageView
-            android:layout_width="59dp"
+            android:layout_width="@dimen/image_width"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/wt_4150897"
@@ -150,11 +150,11 @@
         </ImageView>
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Sunny\n 25 – 31C">
+            android:text="@string/sunny">
 
         </TextView>
 
@@ -166,21 +166,21 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="5dp"
-        android:background="#200000FF"
+        android:background="@color/purple"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="@dimen/width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Friday"
+            android:text="@string/fri"
             android:textColor="@color/black">
 
         </TextView>
 
         <ImageView
-            android:layout_width="59dp"
+            android:layout_width="@dimen/image_width"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/wt_6635551"
@@ -189,11 +189,11 @@
         </ImageView>
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Sunny\n 25 – 31C">
+            android:text="@string/sunny">
         </TextView>
 
     </LinearLayout>
@@ -204,20 +204,20 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="5dp"
-        android:background="#200000FF"
+        android:background="@color/purple"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="@dimen/width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Saturday"
+            android:text="@string/sat"
             android:textColor="@color/black">
         </TextView>
 
         <ImageView
-            android:layout_width="59dp"
+            android:layout_width="@dimen/image_width"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/wt_2188025"
@@ -225,11 +225,11 @@
         </ImageView>
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Tornado \n 25 – 31C">
+            android:text="@string/tornado">
         </TextView>
 
     </LinearLayout>
@@ -240,21 +240,21 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="5dp"
-        android:background="#200000FF"
+        android:background="@color/purple"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="50dp"
+            android:layout_width="@dimen/width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Sunday"
+            android:text="@string/sunday"
             android:textColor="@color/black">
 
         </TextView>
 
         <ImageView
-            android:layout_width="59dp"
+            android:layout_width="@dimen/image_width"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:src="@drawable/wt_1212"
@@ -262,11 +262,11 @@
         </ImageView>
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/text_width"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="Sunny\n 25 – 31C">
+            android:text="@string/sunny">
 
         </TextView>
 
