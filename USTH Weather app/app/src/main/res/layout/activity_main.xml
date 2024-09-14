@@ -61,7 +61,7 @@
     </androidx.viewpager.widget.ViewPager>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/frag2"
+        android:id="@+id/frag_layout2"
         android:name="vn.edu.usth.weatheractivity.fragment_weather"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

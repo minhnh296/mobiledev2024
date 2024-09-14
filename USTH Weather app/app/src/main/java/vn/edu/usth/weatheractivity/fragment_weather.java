@@ -15,6 +15,10 @@ public class fragment_weather extends Fragment {
         return inflater.inflate(R.layout.weatherfragment, container, false);
     }
 
+
+
+
+
     public static fragment_weather newInstance() {
         fragment_weather frag_layout3 = new fragment_weather();
         return frag_layout3;

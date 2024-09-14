@@ -3,42 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/frag2">
+    android:id="@+id/frag_layout2">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/green"
-        tools:ignore="MissingConstraints"
-        android:layout_marginRight="@dimen/margin_vien2"
-        android:layout_marginLeft="@dimen/margin_vien2"
-        android:layout_marginTop="@dimen/margin_vien">
+        android:orientation="vertical">
 
-
-        <TextView
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_vien"
-            android:layout_marginTop="@dimen/margin_vien"
-            android:text="@string/may">
-        </TextView>
+            android:background="@drawable/background">
 
-        <ImageView
-            android:layout_width="@dimen/paris_imag"
-            android:layout_height="@dimen/paris_imag"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/wt_7084486">
-        </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_vien"
+                android:layout_marginTop="@dimen/margin_vien"
+                android:text="@string/may">
+            </TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="@dimen/margin_vien"
-            android:layout_marginEnd="@dimen/margin_vien"
-            android:gravity="right"
-            android:text="@string/paris">
-        </TextView>
-    </RelativeLayout>
+            <ImageView
+                android:layout_width="@dimen/paris_imag"
+                android:layout_height="@dimen/paris_imag"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wt_7084486">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_vien"
+                android:layout_marginEnd="@dimen/margin_vien"
+                android:gravity="right"
+                android:text="@string/paris">
+            </TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
 </LinearLayout>
