@@ -47,6 +47,15 @@
         </ImageButton>
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/playmusic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play_but_x24"
+        android:onClick="playmusic"/>
+
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
@@ -57,7 +66,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top" />
-
     </androidx.viewpager.widget.ViewPager>
 
     <androidx.fragment.app.FragmentContainerView
